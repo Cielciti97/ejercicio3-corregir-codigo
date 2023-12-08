@@ -11,13 +11,16 @@
 
 <body>
 
+  <!-- el elemento input y el div que contiene la lista de productos deben tener los nombres correctos para que puedan ser seleccionados en filtro.js. Como c está utilizando document.getElementsByName("lista-de-productos")[0] y document.querySelector('.input') para seleccionar estos elementos, se debe agregar en este html el  name="lista-de-productos" al div y class="input" al input. Con esto se logra la correcta conexión entre ambos archivos-->
+
   <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
+      <input type="text" class="input" placeholder="Seleccioná un color o tipo">
       <button>Filtrar</button>
       <h1>Lista de productos </h1>
-      <div id="lista-de-productos">
+      <div name="lista-de-productos">
     </div>
   </div>
+  <!-- La ruta está ok -->
   <script src="../filtro.js"></script>
 </body>
 
